@@ -5,12 +5,24 @@ class ColorBlock extends React.Component {
     render() {
         return (
             <div>
-                <div className="square" style={{display: 'block', backgroundColor: `rgb(181, 114, 145)`}}></div>
-                <div className="square" style={{display: 'block', backgroundColor: `rgb(181, 114, 145)`}}></div>
-                <div className="square" style={{display: 'block', backgroundColor: `rgb(181, 114, 145)`}}></div>
-                <div className="square" style={{display: 'block', backgroundColor: `rgb(181, 114, 145)`}}></div>
-                <div className="square" style={{display: 'block', backgroundColor: `rgb(181, 114, 145)`}}></div>
-                <div className="square" style={{display: 'block', backgroundColor: `rgb(181, 114, 145)`}}></div>
+                <h1>The FUNKY
+                    <span id="colorDisplay">RGB</span>
+                    Color Game</h1>
+
+                <div id="stripe">
+                    <button id="reset">Change Colors</button>
+                    <span id="message"></span>
+                    <button className="mode">Easy</button>
+                    <button className="mode selected">Hard</button>
+                </div>
+                <div id="container">
+                    <div className="square" ></div>
+                    <div className="square" ></div>
+                    <div className="square" ></div>
+                    <div className="square" ></div>
+                    <div className="square" ></div>
+                    <div className="square" ></div>
+                </div>
             </div>
 
         )
